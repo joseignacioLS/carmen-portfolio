@@ -1,30 +1,31 @@
-import { IPortfolioEntry } from "../data/types";
-import styles from "./GalleryItem.module.scss";
+import React from "react";
+import styles from "./ShowItem.module.scss";
+import { IProduct } from "@/data/types";
 
 type TProps = {
-  entry?: IPortfolioEntry;
+  entry?: IProduct;
 };
 
-const GalleryItem = ({ entry }: TProps) => {
+const ShopItem = ({ entry }: TProps) => {
   if (!entry) return <></>;
   return (
-    <a href={`/detail/${entry.id}`} className={styles.galleryItem}>
+    <a href={`/product/${entry.id}`} className={styles.shopItem}>
       <img
         loading="lazy"
         className={styles.img}
-        src={entry.mini}
+        src={entry.image}
         style={{ viewTransitionName: `item-image-${entry.id}` }}
       />
       <div className={styles.info}>
         <h2 className={styles.title}>
           <span style={{ viewTransitionName: `title-${entry.id}` }}>
-            {entry.title}
+            {entry.name}
           </span>
         </h2>
-        <span className={styles.subtitle}>{entry.subtitle}</span>
+        <span className={styles.subtitle}>{entry.description}</span>
       </div>
     </a>
   );
 };
 
-export default GalleryItem;
+export default ShopItem;
