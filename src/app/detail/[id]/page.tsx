@@ -1,8 +1,6 @@
 import Detail from "@/components/Detail";
 import React from "react";
 
-const page = () => {
+export default function Page() {
   return <Detail />;
-};
-
-export default page;
+}
