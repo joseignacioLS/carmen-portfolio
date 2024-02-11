@@ -1,0 +1,54 @@
+@import "../styles/variables";
+
+.header {
+  padding: 1rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 5rem;
+  }
+
+  .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    .tab {
+      position: relative;
+      font-weight: bold;
+      color: rgb(172, 172, 172);
+      opacity: .5;
+
+
+      &.selectedTab {
+        color: $highlight;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+@media (max-width: $media_small) {
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    .navbar {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

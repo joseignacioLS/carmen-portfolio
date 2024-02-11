@@ -1,0 +1,68 @@
+@import "../styles/variables";
+
+.footer {
+  padding: 1rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+
+  view-transition-name: footer;
+
+  .rrss {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      a {
+        display: flex;
+        gap: .5rem;
+
+      }
+    }
+
+    img {
+      width: .75rem;
+    }
+  }
+
+  .disclaimer {
+    font-size: 0.75rem;
+    color: $grey;
+    white-space: balance;
+  }
+}
+
+
+@media (max-width: $media_small) {
+
+  .footer {
+    .rrss {
+      gap: 2rem;
+
+      &>li>a>span {
+        display: none;
+      }
+
+      img {
+        width: 1rem;
+      }
+    }
+
+    .disclaimer {
+      font-size: 1rem;
+      color: $grey;
+    }
+  }
+}

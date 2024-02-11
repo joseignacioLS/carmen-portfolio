@@ -1,0 +1,43 @@
+.galleryItem {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+
+  &:hover .info {
+    opacity: 1;
+  }
+
+  .img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .info {
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    padding: 1.5rem;
+
+    transition: 0.3s ease;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(white, .75);
+    box-shadow: 0 1rem 2rem 2rem rgba(white, .75);
+    object-fit: border-box;
+  }
+
+  .subtitle {
+    opacity: 0.6;
+
+    font-size: 1rem;
+  }
+}

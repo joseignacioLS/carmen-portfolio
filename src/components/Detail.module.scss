@@ -1,0 +1,18 @@
+@import "../styles/variables";
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.mainImage {
+  display: block;
+}
+
+
+@media (max-width: $media_small) {
+  .title {
+    font-size: 2rem;
+  }
+
+}
