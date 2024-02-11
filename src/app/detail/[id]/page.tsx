@@ -1,6 +1,6 @@
-import Detail from "@/components/Detail";
+import WorkDetail from "@/app/detail/[id]/WorkDetail";
 import React from "react";
 
 export default function Page() {
-  return <Detail />;
+  return <WorkDetail />;
 }

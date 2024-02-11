@@ -1,10 +1,10 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { PortfolioEntries } from "../data/work";
-import styles from "./Detail.module.scss";
+import { PortfolioEntries } from "../../../data/work";
+import styles from "./WorkDetail.module.scss";
 
-const Detail = () => {
+const WorkDetail = () => {
   const { id } = useParams();
   const info = PortfolioEntries.find((entry) => entry.id === id);
   if (info === undefined) return <>Not Found</>;
@@ -20,4 +20,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default WorkDetail;

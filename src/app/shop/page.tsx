@@ -1,10 +1,18 @@
-import React from "react";
+"use client";
+
+import styles from "./styles.module.scss";
+import Gallery, { EColumnSizes } from "@/components/Gallery";
+import ShopItem from "@/components/ShopItem";
+import { Products } from "@/data/products";
+import { EShopTag } from "@/data/types";
 
 export default function Page() {
   return (
-    <>
-      <h1>Tienda</h1>
-      <p>Abrimos pronto</p>
-    </>
+    <Gallery
+      items={Products}
+      itemComponent={<ShopItem />}
+      tags={EShopTag}
+      size={EColumnSizes.small}
+    />
   );
 }

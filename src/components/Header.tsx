@@ -8,8 +8,8 @@ const Header = () => {
   const pathname = usePathname();
   return (
     <header className={styles.header}>
-      <a href="/">
-        <img className={styles.logo} src="/carmenbonita.png" />
+      <a href="/" className={styles.logo}>
+        <img src="/carmenbonita.png" />
       </a>
       <nav className={styles.navbar}>
         {routes.map((route) => (

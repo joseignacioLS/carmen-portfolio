@@ -1,14 +1,10 @@
-import { ReactNode } from "react";
-import Gallery from "../components/Gallery";
-import Detail from "../components/Detail";
-
-type TRoute = {
+interface IRoute {
   id: string;
   title: string;
   href: string;
-};
+}
 
-export const routes: TRoute[] = [
+export const routes: IRoute[] = [
   {
     id: "portfolio",
     title: "Portfolio",
@@ -20,3 +16,5 @@ export const routes: TRoute[] = [
     href: "/shop",
   },
 ];
+
+export default routes;
