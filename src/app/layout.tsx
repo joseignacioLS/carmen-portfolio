@@ -20,9 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="carmenbonita.png" />
-      </head>
       <body className={`${styles.body} ${inter.className}`}>
         <Header />
         <main>{children}</main>
