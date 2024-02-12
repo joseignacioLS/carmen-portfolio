@@ -1,4 +1,4 @@
-import { rrssData } from "../data/rrss";
+import { rrssData } from "../../data/rrss";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {

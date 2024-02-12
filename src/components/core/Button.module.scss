@@ -2,8 +2,12 @@
   background-color: teal;
   border: 0;
   outline: 0;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   color: white;
   border-radius: 500px;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
