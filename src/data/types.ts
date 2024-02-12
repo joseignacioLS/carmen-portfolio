@@ -26,6 +26,6 @@ export enum EPortfolioTag {
 
 export enum EShopTag {
   pins = "pin",
-  paper = "paper",
+  print = "print",
 }
 

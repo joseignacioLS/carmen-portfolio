@@ -5,11 +5,25 @@ import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
+const languages = ["es", "en"];
+
 const Header = () => {
   const pathname = usePathname();
   const { t, i18n } = useTranslation();
+  const handleLanguageChange = (e: any) => {
+    i18n.changeLanguage(e.target.value);
+  };
   return (
     <header className={styles.header}>
+      <div className={styles.language}>
+        <select value={i18n.language} onChange={handleLanguageChange}>
+          {languages.map((l) => (
+            <option key={l} value={l}>
+              {t(l)}
+            </option>
+          ))}
+        </select>
+      </div>
       <a href="/" className={styles.logo}>
         <img src="/carmenbonita.png" />
       </a>

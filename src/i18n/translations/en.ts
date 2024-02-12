@@ -6,6 +6,9 @@ export const en = {
     "stamp": "Stamp",
     "illustration": "Illustration",
     "pin": "Pin",
-    "paper": "Paper"
+    "print": "Print",
+    "disclaimer":"CarmenBonita All Rights Reserved",
+    "es":"Español",
+    "en":"English"
   }
 }
