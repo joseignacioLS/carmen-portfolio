@@ -3,9 +3,11 @@
 import { routes } from "@/routes/routes";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const pathname = usePathname();
+  const { t, i18n } = useTranslation();
   return (
     <header className={styles.header}>
       <a href="/" className={styles.logo}>
@@ -21,7 +23,7 @@ const Header = () => {
               pathname === route.href ? styles.selectedTab : ""
             }`}
           >
-            {route.title}
+            {t(route.title)}
           </a>
         ))}
       </nav>
