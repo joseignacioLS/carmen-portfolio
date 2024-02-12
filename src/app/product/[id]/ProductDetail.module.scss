@@ -1,17 +1,35 @@
 @import "../../../styles/variables";
 
-.title {
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
+.productDetail {
+  display: grid;
+  grid-template-areas:
+    "carousel title"
+    "carousel details";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
 
-.mainImage {
-  display: block;
+  .title {
+    grid-area: title;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $highlight;
+  }
+  .carousel {
+    grid-area: carousel;
+  }
 }
-
 
 @media (max-width: $media_small) {
-  .title {
-    font-size: 2rem;
+  .productDetail {
+    grid-template-areas:
+      "carousel"
+      "title"
+      "details";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    .title {
+      font-size: 2rem;
+    }
   }
 }

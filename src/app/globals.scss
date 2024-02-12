@@ -8,15 +8,7 @@
   font-family: "Roboto", sans-serif;
   max-width: 100%;
   scroll-behavior: smooth;
-}
 
-html,
-body {
-  color: $grey;
-  background-color: white;
-}
-
-html {
   &::-webkit-scrollbar {
     display: none;
   }
