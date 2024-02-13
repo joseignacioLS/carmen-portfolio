@@ -8,7 +8,7 @@ const resources = {
   es
 };
 
-const storedLng = JSON.parse(window.localStorage.getItem("lng") as any || { value: "es" })?.value;
+const storedLng = JSON.parse(window?.localStorage.getItem("lng") as any || { value: "es" })?.value;
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
