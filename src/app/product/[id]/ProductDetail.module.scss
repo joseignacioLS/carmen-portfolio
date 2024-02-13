@@ -7,14 +7,15 @@
     "carousel details";
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
-  gap: 1rem;
+  gap: $gap_default;
 
   .title {
     grid-area: title;
     font-size: 3rem;
-    margin-bottom: 2rem;
-    color: $highlight;
+    margin-bottom: $gap_big;
+    color: $color_main;
   }
+
   .carousel {
     grid-area: carousel;
   }
@@ -28,6 +29,7 @@
       "details";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+
     .title {
       font-size: 2rem;
     }

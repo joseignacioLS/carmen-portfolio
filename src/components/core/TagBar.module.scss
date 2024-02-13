@@ -1,10 +1,10 @@
 @import "../../styles/variables";
 
 .tagBar {
-  margin-bottom: .5rem;
+  margin-bottom: $gap_default;
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: $gap_default;
 
   .tag {
     opacity: .5;

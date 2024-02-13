@@ -1,13 +1,13 @@
 @import "../../styles/variables";
 
 .footer {
-  padding: 1rem;
+  padding: $padding_default;
   width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: $gap_default;
   text-align: center;
 
   view-transition-name: footer;
@@ -15,7 +15,7 @@
   .rrss {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: $gap_big;
     flex-wrap: wrap;
 
     list-style: none;
@@ -27,7 +27,7 @@
 
       a {
         display: flex;
-        gap: .5rem;
+        gap: $gap_small;
 
       }
     }
@@ -39,7 +39,7 @@
 
   .disclaimer {
     font-size: 0.75rem;
-    color: $grey;
+    color: $color_secondary;
     white-space: balance;
   }
 }
@@ -49,7 +49,7 @@
 
   .footer {
     .rrss {
-      gap: 2rem;
+      gap: $gap_big;
 
       &>li>a>span {
         display: none;
@@ -62,7 +62,7 @@
 
     .disclaimer {
       font-size: 1rem;
-      color: $grey;
+      color: $color_secondary;
     }
   }
 }

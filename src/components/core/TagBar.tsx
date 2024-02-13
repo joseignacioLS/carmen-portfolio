@@ -17,7 +17,7 @@ const TagBar = ({ selectedTag, handleSelectTag, tags }: TProps) => {
         return (
           <Button
             className={`${styles.tag} ${
-              selectedTag === value && styles.selected
+              (selectedTag === value || !selectedTag) && styles.selected
             }`}
             key={key}
             onClick={() => handleSelectTag(value)}

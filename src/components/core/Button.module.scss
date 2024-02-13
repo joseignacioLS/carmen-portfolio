@@ -1,9 +1,11 @@
+@import "../../styles/variables";
+
 .button {
-  background-color: teal;
+  background-color: $color_main;
   border: 0;
   outline: 0;
-  padding: 0.5rem 1rem;
-  color: white;
+  padding: $padding_small $padding_default;
+  color: $color_white;
   border-radius: 500px;
   cursor: pointer;
 

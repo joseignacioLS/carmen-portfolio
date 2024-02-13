@@ -4,6 +4,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+
   .controls {
     position: absolute;
     width: 100%;
@@ -13,14 +14,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: $padding_default;
     user-select: none;
   }
+
   .slideCounter {
     position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    color: white;
+    bottom: $gap_default;
+    right: $gap_default;
+    color: $color_white;
     mix-blend-mode: difference;
   }
 }
@@ -29,7 +31,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: $gap_default;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
