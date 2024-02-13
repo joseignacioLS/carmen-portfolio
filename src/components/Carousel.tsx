@@ -23,11 +23,6 @@ const Carousel = ({ images }: IProps) => {
   const handleScroll = () => {
     const carouselEle = carouselRef.current as any;
     if (!carouselEle) return;
-    console.log(
-      carouselEle.scrollWidth,
-      carouselEle.offsetWidth,
-      carouselEle.scrollLeft
-    );
     if (carouselEle.scrollLeft > 0) {
       setIsLeftControlDisabled(false);
     } else {
