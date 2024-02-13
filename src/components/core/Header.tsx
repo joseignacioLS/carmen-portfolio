@@ -3,11 +3,31 @@
 import { routes } from "@/routes/routes";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
+import { useLocalStorage } from "@/hooks/localStorage";
+
+const languages = ["es", "en"];
 
 const Header = () => {
   const pathname = usePathname();
+  const { t, i18n } = useTranslation();
+  const handleLanguageChange = (e: any) => {
+    setStoredLng({ value: e.target.value });
+    i18n.changeLanguage(e.target.value);
+  };
+
+  const { setValue: setStoredLng } = useLocalStorage("lng");
   return (
     <header className={styles.header}>
+      <div className={styles.language}>
+        <select value={i18n.language} onChange={handleLanguageChange}>
+          {languages.map((l) => (
+            <option key={l} value={l}>
+              {t(l)}
+            </option>
+          ))}
+        </select>
+      </div>
       <a href="/" className={styles.logo}>
         <img src="/carmenbonita.png" />
       </a>
@@ -21,7 +41,7 @@ const Header = () => {
               pathname === route.href ? styles.selectedTab : ""
             }`}
           >
-            {route.title}
+            {t(route.title)}
           </a>
         ))}
       </nav>

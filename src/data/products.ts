@@ -23,6 +23,6 @@ export const Products: IProduct[] = [
     name: "Lamina Ursa",
     description: "",
     image: "/images/products/ursa.jpg",
-    tags: [EShopTag.paper]
+    tags: [EShopTag.print]
   }
 ]

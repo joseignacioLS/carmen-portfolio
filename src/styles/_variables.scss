@@ -1,9 +1,22 @@
 // COLORS
 
-$grey: rgb(61, 61, 61);
-$highlight: rgb(130, 226, 226);
+$color_white: white;
+$color_secondary: rgb(61, 61, 61);
+$color_main: rgb(130, 226, 226);
+
+// OPACITY
 
 
 // MEDIAS
 
 $media_small: 900px;
+
+// SPACES
+
+$gap_small: .25rem;
+$gap_default: .5rem;
+$gap_big: 1rem;
+
+$padding_small: .5rem;
+$padding_default: 1rem;
+$padding_big: 1.5rem;
