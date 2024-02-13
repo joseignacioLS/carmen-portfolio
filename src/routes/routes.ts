@@ -7,12 +7,12 @@ interface IRoute {
 export const routes: IRoute[] = [
   {
     id: "portfolio",
-    title: "Portfolio",
+    title: "portfolio",
     href: "/",
   },
   {
     id: "shop",
-    title: "Tienda",
+    title: "shop",
     href: "/shop",
   },
 ];

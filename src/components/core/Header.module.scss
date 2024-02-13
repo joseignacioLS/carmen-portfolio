@@ -8,6 +8,12 @@
   justify-content: space-between;
   align-items: center;
 
+  .language {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+  }
+
 
   .logo {
     display: flex;
