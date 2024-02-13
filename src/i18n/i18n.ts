@@ -10,7 +10,7 @@ const resources = {
 
 let storedLng = "es";
 if (typeof window !== "undefined") {
-  storedLng = JSON.parse(window.localStorage.getItem("lng") || '{ value: "es" }').value
+  storedLng = JSON.parse(window.localStorage.getItem("lng") || "")?.value || "es"
 }
 
 i18n
