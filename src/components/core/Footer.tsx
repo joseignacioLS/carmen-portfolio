@@ -21,7 +21,8 @@ const Footer = () => {
         })}
       </ul>
       <p className={styles.disclaimer}>
-        © {new Date().getUTCFullYear()} {t("disclaimer")}
+        © {new Date().getUTCFullYear()} CarmenBonita Todos los derechos
+        reservados.
       </p>
     </footer>
   );

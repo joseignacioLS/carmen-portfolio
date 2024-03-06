@@ -1,18 +1,10 @@
 @import "../../../styles/variables";
 
 .title {
-  font-size: 4rem;
+  font-size: $fsize_big;
   margin-bottom: $gap_big;
 }
 
 .mainImage {
   display: block;
-}
-
-
-@media (max-width: $media_small) {
-  .title {
-    font-size: 2rem;
-  }
-
 }

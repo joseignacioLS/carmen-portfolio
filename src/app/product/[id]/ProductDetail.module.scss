@@ -11,7 +11,7 @@
 
   .title {
     grid-area: title;
-    font-size: 3rem;
+    font-size: $fsize_big;
     margin-bottom: $gap_big;
     color: $color_main;
   }
@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width: $media_small) {
+@media (width < $media_small) {
   .productDetail {
     grid-template-areas:
       "carousel"
@@ -31,7 +31,7 @@
     grid-template-rows: auto auto auto;
 
     .title {
-      font-size: 2rem;
+      font-size: $fsize_regular;
     }
   }
 }

@@ -8,7 +8,7 @@
   row-gap: $gap_big;
 }
 
-@media (max-width: $media_small) {
+@media (width < $media_small) {
   .gallery {
     grid-template-columns: 1fr;
   }

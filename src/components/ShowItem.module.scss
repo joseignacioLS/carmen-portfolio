@@ -16,7 +16,7 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: $fsize_big;
   }
 
   .img {
@@ -41,16 +41,16 @@
     flex-direction: column;
     gap: $gap_default;
 
-    font-size: 1.5rem;
+    font-size: $fsize_regular;
     font-weight: bold;
-    background-color: rgba($color_white, .75);
-    box-shadow: 0 $gap_big $gap_big $gap_big rgba($color_white, .75);
+    background-color: rgba($color_white, 0.75);
+    box-shadow: 0 $gap_big $gap_big $gap_big rgba($color_white, 0.75);
     object-fit: border-box;
   }
 
   .subtitle {
     opacity: 0.5;
 
-    font-size: 1rem;
+    font-size: $fsize_regular;
   }
 }
