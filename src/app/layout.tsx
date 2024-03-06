@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import styles from "./layout.module.scss";
-import I118nWrapper from "@/components/I118nWrapper";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,12 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+      </head>
       <body className={`${styles.body} ${inter.className}`}>
-        <I118nWrapper>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </I118nWrapper>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

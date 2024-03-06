@@ -1,11 +1,9 @@
 "use client";
 
-import { useTranslation } from "react-i18next";
 import { rrssData } from "../../data/rrss";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
-  const { t } = useTranslation();
   return (
     <footer className={styles.footer}>
       <ul className={styles.rrss}>
@@ -21,7 +19,8 @@ const Footer = () => {
         })}
       </ul>
       <p className={styles.disclaimer}>
-        © {new Date().getUTCFullYear()} {t("disclaimer")}
+        © {new Date().getUTCFullYear()} CarmenBonita Todos los derechos
+        reservados.
       </p>
     </footer>
   );

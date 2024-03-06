@@ -14,7 +14,6 @@
     right: $gap_default;
   }
 
-
   .logo {
     display: flex;
     justify-content: center;
@@ -36,8 +35,8 @@
       position: relative;
       font-weight: bold;
       color: $color_secondary;
-      opacity: .75;
-
+      opacity: 0.75;
+      margin: 0 $gap_big;
 
       &.selectedTab {
         color: $color_main;
@@ -47,11 +46,10 @@
         opacity: 1;
       }
     }
-
   }
 }
 
-@media (max-width: $media_small) {
+@media (width < $media_small) {
   .header {
     flex-direction: column;
     justify-content: flex-start;
@@ -62,6 +60,7 @@
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
+      margin: 0 $gap_small;
     }
   }
 }

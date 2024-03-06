@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: $media_small) {
+@media (width < $media_small) {
   .wrapper {
     .controls {
       display: none;

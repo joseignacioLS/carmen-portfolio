@@ -19,13 +19,13 @@ export interface IProduct extends IEntry {
 }
 
 export enum EPortfolioTag {
-  design = "design",
-  stamp = "stamp",
-  illustration = "illustration"
+  design = "Diseño",
+  stamp = "Estampación",
+  illustration = "Ilustración"
 }
 
 export enum EShopTag {
-  pins = "pin",
-  print = "print",
+  pins = "Broche",
+  print = "Lámina",
 }
 

@@ -1,6 +1,5 @@
 "use client";
 
-import styles from "./styles.module.scss";
 import Gallery, { EColumnSizes } from "@/components/Gallery";
 import ShopItem from "@/components/ShopItem";
 import { Products } from "@/data/products";

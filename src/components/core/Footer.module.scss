@@ -28,41 +28,33 @@
       a {
         display: flex;
         gap: $gap_small;
-
       }
     }
 
     img {
-      width: .75rem;
+      width: 0.75rem;
     }
   }
 
   .disclaimer {
-    font-size: 0.75rem;
+    font-size: $fsize_small;
     color: $color_secondary;
     white-space: balance;
   }
 }
 
-
-@media (max-width: $media_small) {
-
+@media (width < $media_small) {
   .footer {
     .rrss {
       gap: $gap_big;
 
-      &>li>a>span {
+      & > li > a > span {
         display: none;
       }
 
       img {
         width: 1rem;
       }
-    }
-
-    .disclaimer {
-      font-size: 1rem;
-      color: $color_secondary;
     }
   }
 }
