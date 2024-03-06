@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.entry {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid $color_secondary;
+  margin-bottom: $gap_default;
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding_default;
+    padding-bottom: $padding_small;
+    align-items: center;
+    font-size: $fsize_regular;
+  }
+
+  .expandBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .answer {
+    padding: $padding_default;
+    padding-top: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 200ms, padding 200ms;
+    color: $color_secondary;
+    &.collapsed {
+      grid-template-rows: 0fr;
+      padding: 0 $padding_default;
+    }
+    > div {
+      overflow: hidden;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ShowItem.module.scss";
+import styles from "./ShopItem.module.scss";
 import { IProduct } from "@/data/types";
 
 type TProps = {

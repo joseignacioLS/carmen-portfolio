@@ -31,6 +31,12 @@ body {
   overflow-y: auto;
 }
 
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -49,6 +55,8 @@ h2 {
   font-size: $fsize_big;
 }
 
-p, span, a{
+p,
+span,
+a {
   font-size: $fsize_regular;
 }
