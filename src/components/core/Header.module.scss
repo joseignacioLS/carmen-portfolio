@@ -29,14 +29,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: $gap_default;
+    gap: $gap_big;
 
     .tab {
       position: relative;
       font-weight: bold;
       color: $color_secondary;
       opacity: 0.75;
-      margin: 0 $gap_big;
+      margin: 0;
 
       &.selectedTab {
         color: $color_main;
