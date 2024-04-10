@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .tagBar {
-  margin-bottom: $gap_default;
+  padding-bottom: $gap_default;
   display: flex;
   flex-wrap: wrap;
   gap: $gap_default;

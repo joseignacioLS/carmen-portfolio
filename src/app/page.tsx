@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <Gallery
       items={PortfolioEntries}
-      itemComponent={<GalleryItem />}
       tags={EPortfolioTag}
       size={EColumnSizes.regular}
     />

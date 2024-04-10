@@ -12,10 +12,10 @@ const WorkDetail = () => {
     <div>
       <h1 className={styles.title}>
         <span style={{ viewTransitionName: `title-${info.id}` }}>
-          {info.title}
+          {info.name}
         </span>
       </h1>
-      <img className={styles.mainImage} src={info.mini} />
+      <img className={styles.mainImage} src={info.image} />
     </div>
   );
 };

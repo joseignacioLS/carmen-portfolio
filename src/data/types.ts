@@ -1,31 +1,29 @@
 export interface IEntry {
   id: string;
   tags: any[];
+  type: "blank" | "Portfolio" | "Product";
+  name: string;
+  image: string;
 }
 
 export interface IPortfolioEntry extends IEntry {
-  title: string;
+  tags: EPortfolioTag[];
   subtitle: string;
-  mini: string;
-  tags: EPortfolioTag[]
 }
 
-export interface IProduct extends IEntry {
+export interface IProductEntry extends IEntry {
   sku: string;
-  name: string;
   description: string;
-  image: string;
   tags: EShopTag[];
 }
 
 export enum EPortfolioTag {
   design = "Diseño",
   stamp = "Estampación",
-  illustration = "Ilustración"
+  illustration = "Ilustración",
 }
 
 export enum EShopTag {
   pins = "Broche",
   print = "Lámina",
 }
-
