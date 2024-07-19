@@ -1,0 +1,17 @@
+@use "../../styles/variables";
+
+.wipWrapper {
+  width: 70ch;
+  margin: auto;
+  color: variables.$color_secondary;
+  font-weight: bold;
+
+  >* {
+    margin-bottom: 1ch;
+  }
+
+
+  h1 {
+    color: variables.$color_main
+  }
+}

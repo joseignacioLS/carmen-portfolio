@@ -9,16 +9,16 @@ export
     {
       title: "Instagram",
       logo: "/logos/instagram-svgrepo-com.svg",
-      url: "https://instagram.com",
+      url: "https://instagram.com/carmen.bonita",
     },
-    {
-      title: "Behance",
-      logo: "/logos/behance-svgrepo-com.svg",
-      url: "https://behance.com",
-    },
+    // {
+    //   title: "Behance",
+    //   logo: "/logos/behance-svgrepo-com.svg",
+    //   url: "https://behance.com",
+    // },
     {
       title: "Linkedin",
       logo: "/logos/linkedin-svgrepo-com.svg",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/carmenslbn/",
     },
   ];

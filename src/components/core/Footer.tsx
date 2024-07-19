@@ -12,7 +12,6 @@ const Footer = () => {
             <li key={item.title}>
               <a href={item.url} target="_blank">
                 <img src={item.logo} />
-                <span>{item.title}</span>
               </a>
             </li>
           );
